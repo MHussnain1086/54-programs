@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment # 16</title>
+    <link rel="stylesheet" href="css\bootstrap.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+    <center style="font-size: 38px;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;border-left: #17a2b7 7px solid;border-right:  #17a2b7 7px solid  ;color: #17a2b7;font-weight: bold;">SOLUTIONS</center>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Upper Or LowerCase:<br/>
+            <input type="text" id="get" size="20px" placeholder="Enter a String" required><br/>
+            <p id="result" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="cek()" id="b1" type="button" class="btn btn-info">Check</button</p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Check Day by its Number:<br/>
+            <input type="number" id="get2" size="25px" placeholder="Enter a day Number" required><br/>
+            <p id="result2" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="ce()" id="b2" type="button" class="btn btn-info">Check</button</p>
+        </div>
+    </div>
+    <!-- next Row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Days in Given Month:<br/>
+            <input type="number" id="get3" placeholder="Enter a Month Number" size="25px" required><br/>
+            <p id="result3" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="month()" id="b3" type="button" class="btn btn-info">Check</button</p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Notes Given Amount:<br/>
+            <input type="number" id="get4" size="25px" placeholder="Enter Amount" required><br/>
+            <p id="result4" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="show()" id="b4" type="button" class="btn btn-info">Check</button</p>
+        </div>
+    </div>
+    <!-- next -Row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Triangle Validtion by Sides:<br/>
+            <input type="number" id="get5" size="25px" placeholder="1st Side" required><br/>
+            <p id="result5" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="kof()" id="b5" type="button" class="btn btn-info">Check</button</p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Triangle Validtion by Angle:<br/>
+            <input type="number" id="get6" size="25px" placeholder="1st Angle" required><br/>
+            <p id="result6" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="kof2()" id="b6" type="button" class="btn btn-info">Check</button</p>
+        </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Check Triangle Type:<br/>
+            <input type="number" id="get7" size="25px" placeholder="1st Angle or side" required><br/>
+            <p id="result7" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="bah()" id="b7" type="button" class="btn btn-info">Check</button</p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Roots of Quadratic Equation:<br/>
+            <input type="number" id="get8" size="25px" placeholder="Enter Value of a" required><br/>
+            <p id="result8" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="eqa()" id="b8" type="button" class="btn btn-info">Find</button</p>
+        </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Profit or Loss:<br/>
+            <input type="number" id="get9" size="25px" placeholder="Saling Prize " required><br/>
+            <p id="result9" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="pl()" id="b9" type="button" class="btn btn-info">Calculate</button</p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Occurrence of Char in String:<br/>
+            <input type="text" id="get10" size="20px" placeholder="Enter a String" required><br/>
+            <p id="result10" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="OC()" id="b10" type="button" class="btn btn-info">Check</button</p>
+        </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Count Occurrence of Char:<br/>
+            <input type="text" id="get11" size="20px" placeholder="Enter a String" required><br/>
+            <p id="result11" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="pl0()" id="b11" type="button" class="btn btn-info">Count</button</p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Frequencies of Characters:<br/>
+            <input type="text" id="get12" size="20px" placeholder="Enter a String" required><br/>
+            <p id="result12" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="freq()" id="b12" type="button" class="btn btn-info">Check</button</p>
+        </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Remove First Occurrence:<br/>
+            <input type="text" id="get13" size="20px" placeholder="Enter a String" required><br/>
+            <p id="result13" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="ococ()" id="b13" type="button" class="btn btn-info">Remove</button</p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Remove Last Occurrence:<br/>
+            <input type="text" id="get14" size="20px" placeholder="Enter a String" required><br/>
+            <p id="result14" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="coco()" id="b14" type="button" class="btn btn-info">Remove</button</p>
+        </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Remove All Occurrence:<br/>
+            <input type="text" id="get15" size="20px" placeholder="Enter a String" required><br/>
+            <p id="result15" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="coc()" id="b15" type="button" class="btn btn-info">Remove</button</p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Remove Repeated Characters:<br/>
+            <input type="text" id="get16" size="20px" placeholder="Enter a String" required><br/>
+            <p id="result16" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="reo()" id="b16" type="button" class="btn btn-info">Remove</button</p>
+        </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Replace First Occurrence:<br/>
+            <input type="text" id="get17" size="20px" placeholder="Enter a String" required><br/>
+            <p id="result17" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="o1()" id="b17" type="button" class="btn btn-info">Replace</button</p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Replace Last Occurrence:<br/>
+            <input type="text" id="get18" size="20px" placeholder="Enter a String" required><br/>
+            <p id="result18" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="o11()" id="b18" type="button" class="btn btn-info">Replace</button</p>
+        </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Replace All Occurrence:<br/>
+            <input type="text" id="get19" size="20px" placeholder="Enter a String" required><br/>
+            <p id="result19" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="o111()" id="b19" type="button" class="btn btn-info">Replace</button</p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Find First Occurrence:<br/>
+            <input type="text" id="get20" size="20px" placeholder="Enter words" required><br/>
+            <p id="result20" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="wed()" id="b20" type="button" class="btn btn-info">Find</button</p>
+        </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Find Last Occurrence:<br/>
+            <input type="text" id="get21" size="20px" placeholder="Enter words" required><br/>
+            <p id="result21" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="lass()" id="b21" type="button" class="btn btn-info">Find</button</p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Find All Occurrence:<br/>
+            <input type="text" id="get22" size="20px" placeholder="Enter words" required><br/>
+            <p id="result22" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="las()" id="b22" type="button" class="btn btn-info">Find</button</p>
+        </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Count All Occurrence:<br/>
+            <input type="text" id="get23" size="20px" placeholder="same length word" required><br/>
+            <p id="result23" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <p style="color: red;font-size: 10px;margin-top: -40px;">Please Enter the Words Of Same Length</p><br/>
+            <button style="margin-top: -65px;" onclick="la3()" id="b23" type="button" class="btn btn-info">Count</button</p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Remove First Occurrence:<br/>
+            <input type="text" id="get24" size="20px" placeholder="Enter words" required><br/>
+            <p id="result24" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="lo()" id="b24" type="button" class="btn btn-info">Remove</button</p>
+        </div>
+    </div>
+    <!-- next row  -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Remove Last Occurrence:<br/>
+            <input type="text" id="get25" size="20px" placeholder="Enter words" required><br/>
+            <p id="result25" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="lo0()" id="b25" type="button" class="btn btn-info">Remove</button</p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Remove All Occurrence:<br/>
+            <input type="text" id="get26" size="20px" placeholder="Enter words" required><br/>
+            <p id="result26" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="kot()" id="b26" type="button" class="btn btn-info">Remove</button</p>
+        </div> 
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Both Sides Spaces:<br/>
+            <input type="text" id="get27" size="20px" placeholder="Enter String" required><br/>
+            <p id="result27" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="koo()" id="b27" type="button" class="btn btn-info">Remove</button</p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Remove All Spaces:<br/>
+            <input type="text" id="get28" size="20px" placeholder="Enter a String" required><br/>
+            <p id="result28" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="sokk()" id="b28" type="button" class="btn btn-info">Remove</button></p>
+        </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Frequency of Elements:<br/>
+            <input type="text" id="get29" size="20px" placeholder="Enter 1st Element" required><br/>
+            <p id="result29" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="sok()" id="b29" type="button" class="btn btn-info">Count</button></p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Unique Elements of Array:<br/>
+            <input type="text" id="get30" size="20px" placeholder="Enter 1st Element" required><br/>
+            <p id="result30" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="cokk()" id="b30" type="button" class="btn btn-info">Check</button></p>
+        </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+    <div class="col-md-5 col-sm-12">
+        <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Count Duplicate Elements:<br/>
+        <input type="text" id="get31" size="20px" placeholder="Enter 1st Element" required><br/>
+        <p id="result31" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+        <button style="margin-top: -65px;" onclick="ddl()" id="b31" type="button" class="btn btn-info">Count</button></p>
+    </div>
+    <!-- next module -->
+    <div class="col-md-5 col-sm-12">
+        <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Duplicate Elements of Array:<br/>
+        <input type="text" id="get32" size="20px" placeholder="Enter 1st Element" required><br/>
+        <p id="result32" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+        <button style="margin-top: -65px;" onclick="lax()" id="b32" type="button" class="btn btn-info">Delete</button></p>
+    </div>
+    </div>
+    <!-- next Row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Merging Two Arrays:<br/>
+            <input type="text" id="get33" size="20px" placeholder="Enter 1st Element" required><br/>
+            <p id="result33" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="lak()" id="b33" type="button" class="btn btn-info">Merge</button></p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Reverse an Array:<br/>
+            <input type="text" id="get34" size="20px" placeholder="Enter 1st Element" required><br/>
+            <p id="result34" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="ree()" id="b34" type="button" class="btn btn-info">Reverse</button></p>
+        </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Diff Even and Odd:<br/>
+            <input type="number" id="get35" size="20px" placeholder="Enter 1st Element" required><br/>
+            <p id="result35" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="rke()" id="b35" type="button" class="btn btn-info">Diffreniate</button></p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Search Element in Array:<br/>
+            <input type="text" id="get36" size="20px" placeholder="Enter 1st Element" required><br/>
+            <p id="result36" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="eke()" id="b36" type="button" class="btn btn-info">Search</button></p>
+        </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">IN Ascending order:<br/>
+            <input type="text" id="get37" size="20px" placeholder="Enter 1st Element" required><br/>
+            <p id="result37" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="e00()" id="b37" type="button" class="btn btn-info">Sort Numbers</button>
+            <button style="margin-top: -65px;" onclick="e0()" id="b37" type="button" class="btn btn-info">Sort Alphabets</button></p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Seperate Even and Odd Num:<br/>
+            <input type="number" id="get38" size="20px" placeholder="Enter 1st Element" required><br/>
+            <p id="result38" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="jo()" id="b38" type="button" class="btn btn-info">Sort</button></p>
+        </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Rotate Left an Array:<br/>
+            <input type="text" id="get39" size="20px" placeholder="Enter 1st Element" required><br/>
+            <p id="result39" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="j()" id="b39" type="button" class="btn btn-info">Rotate</button></p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Rotate Right an Array:<br/>
+            <input type="text" id="get40" size="20px" placeholder="Enter 1st Element" required><br/>
+            <p id="result40" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="jk()" id="b40" type="button" class="btn btn-info">Rotate</button></p>
+        </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Sum of Natural Numbers:<br/>
+            <input type="number" id="get41" size="20px" placeholder="Enter limit" required><br/>
+            <p id="result41" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="bk()" id="b41" type="button" class="btn btn-info">Sum</button></p>
+    </div>
+    <!-- next module -->
+    <div class="col-md-5 col-sm-12">
+        <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Sum of Even Numbers:<br/>
+        <input type="number" id="get42" size="20px" placeholder="Enter limit" required><br/>
+        <p id="result42" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+        <button style="margin-top: -65px;" onclick="dm()" id="b42" type="button" class="btn btn-info">Sum</button></p>
+</div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Sum of Odd Numbers:<br/>
+            <input type="number" id="get43" size="20px" placeholder="Enter limit" required><br/>
+            <p id="result43" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="dc()" id="b43" type="button" class="btn btn-info">Sum</button></p>
+    </div>
+    <!-- next module -->
+    <div class="col-md-5 col-sm-12">
+        <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Table of Any Number:<br/>
+        <input type="number" id="get44" size="20px" placeholder="Enter number of Table" required><br/>
+        <p id="result44" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+        <button style="margin-top: -65px;" onclick="vk()" id="b44" type="button" class="btn btn-info">Print</button></p>
+</div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Number of Digits:<br/>
+            <input type="number" id="get45" size="20px" placeholder="Enter  Numbers" required><br/>
+            <p id="result45" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="count()" id="b45" type="button" class="btn btn-info">Count</button></p>
+    </div>
+    <!-- next module -->
+    <div class="col-md-5 col-sm-12">
+        <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">1st and Last Digits:<br/>
+        <input type="number" id="get46" size="20px" placeholder="Enter  Numbers" required><br/>
+        <p id="result46" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+        <button style="margin-top: -65px;" onclick="fL()" id="b46" type="button" class="btn btn-info">Find</button></p>
+    </div>
+    </div>
+    <!-- next row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Sum of 1st and Last Digits:<br/>
+            <input type="number" id="get47" size="20px" placeholder="Enter  Numbers" required><br/>
+            <p id="result47" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="Lkk()" id="b47" type="button" class="btn btn-info">Sum</button></p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Swap 1st and Last Digits:<br/>
+            <input type="number" id="get48" size="20px" placeholder="Enter  Numbers" required><br/>
+            <p id="result48" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="sw()" id="b48" type="button" class="btn btn-info">Swap</button></p>
+        </div>
+    </div>
+    <!-- nex row -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Sum of Digits:<br/>
+            <input type="number" id="get49" size="20px" placeholder="Enter  Numbers" required><br/>
+            <p id="result49" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="suum()" id="b49" type="button" class="btn btn-info">Sum</button></p>
+        </div>
+        <!-- next module -->
+        <div class="col-md-5 col-sm-12">
+            <p style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: 28px;color:  #17a2b7;font-weight:normal;margin-top: 20px;">Product of Digits:<br/>
+            <input type="number" id="get50" size="20px" placeholder="Enter  Numbers" required><br/>
+            <p id="result50" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></p><br/>
+            <button style="margin-top: -65px;" onclick="product()" id="b50" type="button" class="btn btn-info">Product</button></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <center style="color:#17a2b7;font-weight:bolder">THE END</center>
+        </div>
+    </div>
+    </div>
+
+    <script src="functions.JS"></script>
+</body>
+</html>
